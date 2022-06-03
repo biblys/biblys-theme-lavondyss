@@ -1,6 +1,7 @@
 :root {
   --grey-15: rgba(0, 0, 0, 0.15);
   --grey-25: rgba(0, 0, 0, 0.25);
+  --brown: #584845;
 }
 
 html {
@@ -120,7 +121,7 @@ em {
 
 @media(min-width: 768px) {
   .site-header .site-navigation {
-    background-color: var(--grey-25);
+    background-color: var(--brown);
     flex-direction: row;
     justify-content: space-evenly;
     padding: 4px 0;
