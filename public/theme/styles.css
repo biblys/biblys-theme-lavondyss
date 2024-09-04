@@ -17,12 +17,6 @@ a {
   text-decoration: none;
 }
 
-/* # Typography */
-
-em {
-  font-style: italic;
-}
-
 /* # Layout */
 
 .site-header,
@@ -36,10 +30,11 @@ em {
 
 /* ## Header */
 
-.site-header .site-title {
-  font-size: 5rem;
-  margin: 64px auto;
-  text-align: center;
+.site-header .site-logo {
+  display: block;
+  margin: 16px auto;
+  max-width: 500px;
+  width: 100%;
 }
 
 /* ### Header bar */
@@ -224,37 +219,6 @@ em {
   width: 100%;
 }
 
-.article__similar-articles__cover {
-  max-width: 100%;
-}
-
-.article__similar-articles__actions {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px 0;
-}
-
-@media(min-width: 768px) {
-  .article__similar-articles__list {
-    align-items: flex-end;
-    justify-content: left;
-    display: flex;
-    gap: 16px;
-  }
-
-  .article__similar-articles__item {
-    width: 25%;
-  }
-}
-
-@media(min-width: 1024px) {
-  .article__similar-articles__item {
-    width: 175px;
-  }
-}
-
 /* # Article list */
 
 .article-list {
@@ -338,24 +302,3 @@ em {
   }
 }
 
-/* # Contributor page */
-
-.contributor .contributor__photo {
-  display: block;
-  margin: 16px auto;
-  max-width: 100vw;
-  max-height: 100vw;
-}
-
-@media(min-width: 768px) {
-  .contributor .contributor__informations {
-    display: flex;
-    gap: 16px;
-  }
-
-  .contributor .contributor__photo {
-    margin: 0;
-    max-height: 256px;
-    max-width: 256px;
-  }
-}
